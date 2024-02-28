@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.btnCreate').click(function(){
-    var $note = $('<div class="note"><div class="title flex"><p>Title 1</p></div><div class="content"><p></p></div></div>');
+    var $note = $('<div class="note"><div class="title flex"><input type="text" class="TxtTitle"></div><div class="content"><textarea class="TxtContent"></textarea></div></div>');
     $('.container').append($note);
   });
 
