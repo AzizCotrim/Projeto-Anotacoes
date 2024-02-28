@@ -22,6 +22,7 @@ html,body{
 }
 
 .note{
+  position: relative;
   width: 32%;
   height: 200px;
   margin: 10px 0;
@@ -29,6 +30,17 @@ html,body{
   border-radius: 5%;
   cursor: pointer;
   transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.selected{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
 }
 
 .title{

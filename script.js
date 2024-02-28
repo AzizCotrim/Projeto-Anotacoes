@@ -4,34 +4,16 @@ $(document).ready(function(){
     $('.container').append($note);
   });
 
-  var originalStyles = {};
-
-  $('.note').one('click', function(){
-    originalStyles = {
-      display: $(this).css('display'),
-      width: $(this).css('width'),
-      height: $(this).css('height'),
-      transform: $(this).css('transform')
-    }
-    $(this).css({
-      'width': '500px',
-      'height': '500px',
-      'margin': '0',
-      'position': 'absolute',
-      'top': '50%',
-      'left': '50%',
-      'transform': 'translate(-50%,-50%)',
-      'z-index': '999'
-    });
+  $('.container').on('click', '.note', function(){
+    $(this).addClass('selected');
+    $('.blur').remove();
     $('body').append('<div class="blur"></div>');
   });
 
+
   $(document).on('click', '.blur', function(){
-    $('.note').css(originalStyles);
+    $('.note').removeClass('selected');
     $('.blur').remove();
-    $('.note').one('click', function() {
-      $(this).trigger('click');
-    });
   });
 });
 
