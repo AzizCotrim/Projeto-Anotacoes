@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To Do List</title>
-</head>
-<body>
-  <div class="container flex">
-    <div class="note">
-      <div class="title flex">
-        <input type="text" class="TxtTitle">
-      </div>
-      <div class="content">
-        <textarea class="TxtContent"></textarea>
-      </div>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <header>
+      
+        <div class="header">
+          <p>Anotações</p>
+        </div><!--header-->
+    </header>
+    <div class="container flex">
+      <div class="note">
+        <div class="title flex">
+          <input type="text" class="TxtTitle">
+        </div><!--title-->
+        <div class="content">
+          <textarea class="TxtContent"></textarea>
+        </div><!--content-->
+      </div><!--note-->
+      <div class="btnCreate">
+        <i class="fa-solid fa-pen"></i>
+      </div><!--btnCreate-->
     </div>
-    <div class="btnCreate">
-      <i class="fa-solid fa-pen"></i>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
